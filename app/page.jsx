@@ -8,40 +8,43 @@ export default function Home() {
         Caroline Buigas <br />
         UX Designer
       </h1>
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-around">
-        <Link className="relative group block pb-6 md:pb-0" href="/page1">
-          
-            <Image
-              src="/images/stock1.jpg" // Replace with the actual path to your first image
-              alt="First Image"
-              width={500}
-              height={500}
-              className="block"
-            />
+      <div className="container mx-auto flex flex-col md:flex-row items-center sm:justify-around">
+        <Link
+          className="relative group block mb-6 md:mb-0 w-80 h-56 lg:w-2/5 lg:h-80"
+          href="/portfolio/sweetbud-case-study"
+        >
+          <Image
+            src="/images/stock1.jpg" // Replace with the actual path to your first image
+            alt="First Image"
+            fill="true"
+            className="block"
+          />
 
-            {/* Dark overlay and text */}
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white text-3xl font-bold">SweetBud</p>
-              </div>
+          {/* Dark overlay and text */}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-white text-3xl font-bold">SweetBud</p>
             </div>
+          </div>
         </Link>
 
-        <Link className="relative group block pb-6 md:pb-0" href="/page2">
-            <Image
-              src="/images/stock2.jpg" // Replace with the actual path to your first image
-              alt="First Image"
-              width={500}
-              height={500}
-              className="block"
-            />
+        <Link
+          className="relative group block w-80 h-56 lg:w-2/5 lg:h-80"
+          href="/portfolio/blogly-case-study"
+        >
+          <Image
+            src="/images/stock2.jpg" // Replace with the actual path to your first image
+            alt="First Image"
+            fill="true"
+            className="block"
+          />
 
-            {/* Dark overlay and text */}
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white text-3xl font-bold">Blogly</p>
-              </div>
+          {/* Dark overlay and text */}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-white text-3xl font-bold">Blogly</p>
             </div>
+          </div>
         </Link>
       </div>
     </div>

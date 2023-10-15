@@ -1,0 +1,18 @@
+{
+  "sweetbud-case-study": {
+    "project": {
+      "intro": "SweetBud is an innovative bouquet ordering app designed to provide users with a personalized experience for ordering flowers to their exact specifications. Our app caters to a diverse target audience, including individuals who have a passion for flowers and professionals such as event planners for weddings and TV productions.",
+      "duration": "6 months",
+      "methods": "Affinity Mapping, Wireframes, Prototyping",
+      "tools": "Figma and Mural"
+    },
+    "context": "",
+    "process": "",
+    "empathize": ""
+  },
+  "blogly-case-study": {
+    "title": "Page 2",
+    "content": "Text content for page 2",
+    "author": "Author 2"
+  }
+}
