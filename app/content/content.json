@@ -6,9 +6,18 @@
       "methods": "Affinity Mapping, Wireframes, Prototyping",
       "tools": "Figma and Mural"
     },
-    "context": "",
-    "process": "",
-    "empathize": ""
+    "context": [
+      "Floral arrangements can serve many purposes from gifting to self expression. Flowers are easy to love due their spectacular colors and variety. There is something for everyone when it comes to bouquets.",
+      "I wanted to provide flower enthusiasts with the a platform that is seamless to use and provides the user with an element of creativity so that they can feel immersed in each step of the experience.",
+      "SweetBud makes this dream a reality with a simple interface and custom ordering options."
+    ],
+    "process": "WILL BE AN IMAGE",
+    "empathize": {
+      "competitive-audit": {
+        "companies": ["Bouqs", "Floward", "1800Flowers", "Costco"],
+        "findings": "Because Costco and Floward service different markets and general products, they would be indirect competitors SweetBud which would be serving users within the USA and also providing only floral arrangements and not any other gifts such as snack baskets. Bouqs is a higher cost option for floral arrangments within this market. Finally, 1800Flowers’ website is not seamless to use and has a very broad selection range. Thus, a gap in the market is a service that offers users the ability to easily customize bulk floral arrangements at a mid range cost."
+      }
+    }
   },
   "blogly-case-study": {
     "title": "Page 2",
