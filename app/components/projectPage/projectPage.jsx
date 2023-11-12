@@ -6,9 +6,8 @@ import React from "react";
 import content from "../../content/content.json";
 
 function ProjectPage() {
-  const pathname = usePathname();
-
-  const pageData = content[pathname.slice(11)];
+  // const pathname = usePathname();
+  // const pageData = content[pathname.slice(11)];
 
   return (
     <div className="container px-4 sm:px-8 max-w-4xl mx-auto">

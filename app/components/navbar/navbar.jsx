@@ -1,5 +1,6 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
 // import resume from '../../../public/CarolineBuigasResume.pdf'
 
 const Navbar = () => {
@@ -12,7 +13,6 @@ const Navbar = () => {
   return (
     <nav className="p-4">
       <div className="container mx-auto flex justify-end items-center">
-
         {/* Mobile menu button (Hamburger icon) */}
         <div className="md:hidden">
           <button
@@ -41,7 +41,11 @@ const Navbar = () => {
           <a href="/" className="text-blue-600 hover:opacity-70">
             Portfolio
           </a>
-          <a href="/resume" className="text-blue-600 hover:opacity-70">
+          <a
+            className="text-blue-600 hover:opacity-70"
+            href="/CarolineBuigasResume.pdf"
+            target="_blank"
+          >
             Resume
           </a>
           <a href="/contact" className="text-blue-600 hover:opacity-70">
@@ -51,12 +55,16 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu (hidden by default) */}
-      <div className={`md:hidden ${mobileMenuOpen ? '' : 'hidden'}`}>
+      <div className={`md:hidden ${mobileMenuOpen ? "" : "hidden"}`}>
         <div className="p-4">
           <a href="/" className="block text-blue-600 mb-2">
             Portfolio
           </a>
-          <a href="/resume" target="_blank" className="block text-blue-600 mb-2">
+          <a
+            href="/resume"
+            target="_blank"
+            className="block text-blue-600 mb-2"
+          >
             Resume
           </a>
           <a href="/contact" className="block text-blue-600">
