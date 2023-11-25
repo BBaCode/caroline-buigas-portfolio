@@ -61,7 +61,7 @@ const Navbar = () => {
             Portfolio
           </a>
           <a
-            href="/resume"
+            href="/resume.pdf"
             target="_blank"
             className="block text-blue-600 mb-2"
             download={true}
