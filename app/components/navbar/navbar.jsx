@@ -64,7 +64,6 @@ const Navbar = () => {
             href="/resume"
             target="_blank"
             className="block text-blue-600 mb-2"
-            download={true}
           >
             Resume
           </a>
