@@ -1,9 +1,31 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Slider from "react-slick";
 import ProjectPage from "../../components/projectPage/projectPage";
+import ImageCarousel from "@/app/components/imageCarousel/imageCarousel";
 
 function sweetBudCaseStudy() {
+  const wireFrameImages = [
+    "/images/sweetBudFrame1.png",
+    "/images/sweetBudFrame1.png",
+    "/images/sweetBudFrame1.png",
+    "/images/sweetBudFrame1.png",
+    "/images/sweetBudFrame1.png",
+  ];
+
+  const loFiImages = [
+    "/images/SBProto1.png",
+    "/images/SBProto2.png",
+    "/images/SBProto3.png",
+  ];
+
+  const prototypeImages = [
+    "/images/SBProto1.png",
+    "/images/SBProto2.png",
+    "/images/SBProto3.png",
+  ];
+
   return (
     <div className="container px-4 sm:px-8 max-w-4xl mx-auto">
       <div className="mx-auto w-full py-4">
@@ -126,70 +148,11 @@ function sweetBudCaseStudy() {
         communication and reliable order fulfillment.
       </p>
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">Ideate</h2>
-      <p className="font-bold pb-2">Low Fidelity Wireframe</p>
-      <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 w-full pb-4">
-        <Image
-          src="/images/sweetBudFrame1.png"
-          alt="Image 1"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/sweetBudFrame2.png"
-          alt="Image 2"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/sweetBudFrame3.png"
-          alt="Image 3"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/sweetBudFrame4.png"
-          alt="Image 4"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/sweetBudFrame5.png"
-          alt="Image 5"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-      </div>
-      <p className="font-bold pb-2">Low Fidelity Prototype</p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full pb-4 mx-auto">
-        <Image
-          src="/images/SBLowFidel1.png"
-          alt="Image 1"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/SBLowFidel2.png"
-          alt="Image 2"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/SBLowFidel3.png"
-          alt="Image 3"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-      </div>
-
-      <p className="font-bold py-4">
+      <p className="font-bold pb-4">Low Fidelity Wireframe</p>
+      <ImageCarousel images={wireFrameImages} gapNum={5}></ImageCarousel>
+      <p className="font-bold pt-6 pb-4">Low Fidelity Prototype</p>
+      <ImageCarousel images={loFiImages} gapNum={3}></ImageCarousel>
+      <p className="font-bold pt-6 pb-4">
         LoFi Prototype Testing and Synthesizing Results
       </p>
       <div className="w-full aspect-video relative mb-4">
@@ -207,42 +170,61 @@ function sweetBudCaseStudy() {
         With the results of the unmoderated test, I was able to go back to the
         drawing board and iterate of my designs to improve the user experience
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full pb-4 mx-auto">
-        <Image
-          src="/images/SBProto1.png"
-          alt="Image 1"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/SBProto2.png"
-          alt="Image 2"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
-        <Image
-          src="/images/SBProto3.png"
-          alt="Image 3"
-          className="max-w-1/5 mx-auto"
-          width="200"
-          height="200"
-        />
+      <ImageCarousel images={prototypeImages} gapNum={3}></ImageCarousel>
+
+      <div className="flex flex-col items-center sm:flex-row sm:justify-center py-4">
+        <div className=" sm:w-1/3 flex flex-col items-center p-2">
+          <div className="my-4 text-center w-24 h-24 px-4 br-4 rounded-full bg-green-300 flex items-center justify-center">
+            <p>1</p>
+          </div>
+          <p className="sm:h-32">
+            Particpants noted that app was not visually appealing in the lo-fi
+            prototype state and also complained that they could not insert their
+            own information into the check out.
+          </p>
+        </div>
+        <div className=" sm:w-1/3 flex flex-col items-center p-2">
+          <div className="my-4 text-center w-24 h-24 px-4 br-4 rounded-full bg-green-300 flex items-center justify-center">
+            <p>2</p>
+          </div>
+          <p className="sm:h-32">
+            Participants were confused by the check out process because during
+            that stage, the path would go directly from basket to checkout
+            completed. As such, it needed more steps added.
+          </p>
+        </div>
+        <div className=" sm:w-1/3 flex flex-col items-center p-2">
+          <div className="my-4 text-center w-24 h-24 px-4 br-4 rounded-full bg-green-300 flex items-center justify-center">
+            <p>3</p>
+          </div>
+          <p className="sm:h-32">
+            Participants wanted an easier way to get to the home page and
+            understand what their next step in the application should be.
+          </p>
+        </div>
       </div>
-      <h2 className="font text-2xl text-blue-600 font-semibold pb-4">
+      <h2 className="font text-2xl text-blue-600 font-semibold pb-4 pt-6">
         Accessibility
       </h2>
-
-      <div className="w-full relative">
-        <Image
-          src="/images/plantsInApp.png"
-          alt="plants"
-          className="mx-auto"
-          width={250}
-          height={400}
-        />
+      <div className="flex flex-col items-center sm:flex-row sm:justify-center pb-4">
+        <div className="w-full relative">
+          <Image
+            src="/images/plantsInApp.png"
+            alt="plants"
+            className="mx-auto"
+            width={250}
+            height={400}
+          />
+        </div>
+        <p className="py-4 sm:px-12">
+          Text for photos of the order options that way a screen reader can let
+          the user know what they have selected High contrast colors used
+          throughout for those with low visiability Typography is a sans serif
+          font for low resolution screens Label text in the check out screen to
+          help the user to know what must be added
+        </p>
       </div>
+
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">
         Sticker Sheet
       </h2>
@@ -254,16 +236,38 @@ function sweetBudCaseStudy() {
           fill="true"
         />
       </div>
+      <h2 className="font text-2xl text-blue-600 font-semibold py-4">
+        HiFi Prototype User Testing Verbatims
+      </h2>
+      <p className="pb-4">
+        "As a wedding planner, I appreciate the seamless experience SweetBud
+        provides; the simplified ordering process and improved communication
+        would make my job much smoother."
+      </p>
+      <p className="pb-4">
+        "The app's customization features are a game-changer! It allowed us to
+        tailor each bouquet to perfection, and the tracking system kept us
+        informed every step of the way."
+      </p>
       <p className="pb-4">
         Click{" "}
         <a
           className="font-bold hover:text-blue-600 hover:border-blue-600"
           href="https://www.figma.com/proto/LYTwdn1gQIUKxL5mD7zg0A/Florals-app?type=design&node-id=430-131&t=0Oe9wh8cllVKDZLL-1&scaling=scale-down&page-id=297%3A761&starting-point-node-id=430%3A131&mode=design"
         >
-          here
-        </a>{" "}
+          {" "}
+          here{" "}
+        </a>
         to view the final prototype.
       </p>
+      <div className="w-full h-auto aspect-video relative mb-4">
+        <Image
+          src="/images/SBFinal.png"
+          alt="FinalSB"
+          className="mx-auto"
+          fill="true"
+        />
+      </div>
     </div>
   );
 }
