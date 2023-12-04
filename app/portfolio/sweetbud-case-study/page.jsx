@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Slider from "react-slick";
-import ProjectPage from "../../components/projectPage/projectPage";
-import ImageCarousel from "@/app/components/imageCarousel/imageCarousel";
+import ImageCarousel from "../../components/imageCarousel/imageCarousel";
 
 function sweetBudCaseStudy() {
   const wireFrameImages = [

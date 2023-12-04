@@ -8,13 +8,13 @@ export default function Home() {
         Caroline Buigas <br />
         UX Designer
       </h1>
-      <div className="container mx-auto flex flex-col md:flex-row items-center sm:justify-around">
+      <div className="container mx-auto flex flex-col md:flex-row items-center sm:justify-around flex items-center justify-center">
         <Link
           className="relative group block mb-6 md:mb-0 w-80 h-56 lg:w-2/5 lg:h-80"
           href="/portfolio/sweetbud-case-study"
         >
           <Image
-            src="/images/stock1.jpg" // Replace with the actual path to your first image
+            src="/images/SweetbudHeader.png" // Replace with the actual path to your first image
             alt="First Image"
             fill="true"
             className="block"
