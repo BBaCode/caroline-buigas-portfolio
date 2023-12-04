@@ -6,7 +6,18 @@ import ProjectPage from "../../components/projectPage/projectPage";
 function sweetBudCaseStudy() {
   return (
     <div className="container px-4 sm:px-8 max-w-4xl mx-auto">
-      <img src="" alt="header" />
+      <div className="mx-auto w-full py-4">
+        <div className="max-w-screen-lg w-full">
+          <Image
+            src="/images/SweetbudHeader.png"
+            alt="sweetbudheader"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">
         The Project
       </h2>
@@ -108,6 +119,12 @@ function sweetBudCaseStudy() {
       </div>
 
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">Define</h2>
+      <p className="pb-4 text-lg">
+        AJ is a wedding planner who faces challenges in the current flower
+        ordering process, as it lacks clarity and customization options,
+        prompting the need for a more user-friendly system that ensures clear
+        communication and reliable order fulfillment.
+      </p>
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">Ideate</h2>
       <p className="font-bold pb-2">Low Fidelity Wireframe</p>
       <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 w-full pb-4">
@@ -147,7 +164,34 @@ function sweetBudCaseStudy() {
           height="200"
         />
       </div>
-      <p className="font-bold pb-2">Feedback</p>
+      <p className="font-bold pb-2">Low Fidelity Prototype</p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full pb-4 mx-auto">
+        <Image
+          src="/images/SBLowFidel1.png"
+          alt="Image 1"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+        <Image
+          src="/images/SBLowFidel2.png"
+          alt="Image 2"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+        <Image
+          src="/images/SBLowFidel3.png"
+          alt="Image 3"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+      </div>
+
+      <p className="font-bold py-4">
+        LoFi Prototype Testing and Synthesizing Results
+      </p>
       <div className="w-full aspect-video relative mb-4">
         <Image
           src="/images/feedbackStickies.png"
@@ -157,8 +201,39 @@ function sweetBudCaseStudy() {
         />
       </div>
       <h2 className="font text-2xl text-blue-600 font-semibold pb-4">
+        Prototype
+      </h2>
+      <p className="pb-4">
+        With the results of the unmoderated test, I was able to go back to the
+        drawing board and iterate of my designs to improve the user experience
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full pb-4 mx-auto">
+        <Image
+          src="/images/SBProto1.png"
+          alt="Image 1"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+        <Image
+          src="/images/SBProto2.png"
+          alt="Image 2"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+        <Image
+          src="/images/SBProto3.png"
+          alt="Image 3"
+          className="max-w-1/5 mx-auto"
+          width="200"
+          height="200"
+        />
+      </div>
+      <h2 className="font text-2xl text-blue-600 font-semibold pb-4">
         Accessibility
       </h2>
+
       <div className="w-full relative">
         <Image
           src="/images/plantsInApp.png"
