@@ -6,10 +6,10 @@ import ImageCarousel from "../../components/imageCarousel/imageCarousel";
 function sweetBudCaseStudy() {
   const wireFrameImages = [
     "/images/sweetBudFrame1.png",
-    "/images/sweetBudFrame1.png",
-    "/images/sweetBudFrame1.png",
-    "/images/sweetBudFrame1.png",
-    "/images/sweetBudFrame1.png",
+    "/images/sweetBudFrame2.png",
+    "/images/sweetBudFrame3.png",
+    "/images/sweetBudFrame4.png",
+    "/images/sweetBudFrame5.png",
   ];
 
   const loFiImages = [

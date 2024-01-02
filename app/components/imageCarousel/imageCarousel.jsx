@@ -44,14 +44,14 @@ const ImageCarousel = ({ images, gapNum }) => {
           ))}
         </div>
       ) : (
-        <div className="hidden sm:grid grid-cols-5 gap-10">
+        <div className={`hidden sm:grid grid-cols-2 gap-10`}>
           {/* Grid layout for larger screens */}
           {images.map((imageUrl, index) => (
             <Image
               key={index}
               src={imageUrl}
               alt={`Image ${index + 1}`}
-              className="max-w-1/5 mx-auto"
+              className={`max-w-1/5 mx-auto`}
               width={200}
               height={200}
             />

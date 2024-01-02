@@ -4,47 +4,35 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container px-4 mx-auto mt-6">
-      <h1 className="text-5xl md:text-6xl lg:text-8xl text-blue-600 pb-16">
-        Caroline Buigas <br />
+      <h1 className="text-5xl md:text-6xl lg:text-8xl text-blue-600 pb-16 ">
+        <span className="title">Caroline Buigas</span> <br />
         UX Designer
       </h1>
-      <div className="container mx-auto flex-col md:flex-row sm:justify-around flex items-center justify-center">
+      <div className="container mx-auto flex-col sm:justify-around flex items-center justify-center">
         <Link
-          className="relative group block mb-6 md:mb-0 w-80 h-56 lg:w-2/5 lg:h-80"
+          className="relative group block mb-6 md:mb-0 w-full"
           href="/portfolio/sweetbud-case-study"
         >
           <Image
             src="/images/SweetbudHeader.png" // Replace with the actual path to your first image
-            alt="First Image"
-            fill="true"
-            className="block"
+            alt="Sweetbud Case Study"
+            width={800}
+            height={300}
+            className="block mx-auto mb-5 hover:opacity-70 hover:shadow-xl"
           />
-
-          {/* Dark overlay and text */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <p className="text-white text-3xl font-bold">SweetBud</p>
-            </div>
-          </div>
         </Link>
 
         <Link
-          className="relative group block w-80 h-56 lg:w-2/5 lg:h-80"
+          className="relative group block mb-6 md:mb-0 w-full"
           href="/portfolio/blogly-case-study"
         >
           <Image
-            src="/images/stock2.jpg" // Replace with the actual path to your first image
-            alt="First Image"
-            fill="true"
-            className="block"
+            src="/images/blogglyPortfolioPage.png" // Replace with the actual path to your first image
+            alt="Bloggly Case Study"
+            width={800}
+            height={250}
+            className="block mx-auto hover:opacity-70 hover:shadow-xl mb-10"
           />
-
-          {/* Dark overlay and text */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity">
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <p className="text-white text-3xl font-bold">Blogly</p>
-            </div>
-          </div>
         </Link>
       </div>
     </div>
