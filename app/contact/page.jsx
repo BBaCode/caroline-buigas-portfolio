@@ -16,11 +16,11 @@ function contact() {
             className="w-full rounded-t-lg md:rounded-tr-none md:rounded-bl-lg"
           ></Image>
         </div>
-        <div className="ml-4 w-96">
+        <div className="ml-4 md:w-96">
           <h1 className="text-xl md:text-3xl font-bold text-blue-600 pb-4 md:pb-8 mt-4">
             Let's Chat
           </h1>
-          <p className="text-base leading-8">
+          <p className="text-base leading-8 pb-2">
             If you'd like to get in touch, email me at{" "}
             <a
               className="hover:border-b-2 border-transparent hover:border-black"
