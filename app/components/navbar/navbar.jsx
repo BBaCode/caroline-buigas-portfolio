@@ -60,7 +60,7 @@ const Navbar = () => {
           >
             Caroline Buigas UX Portfolio
           </a>
-          <div className="">
+          <div>
             <a
               href="/"
               className={`text-blue-600 hover:opacity-70 ml-2 ${

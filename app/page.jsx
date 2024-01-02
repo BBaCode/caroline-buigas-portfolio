@@ -24,7 +24,7 @@ export default function Home() {
 
         <Link
           className="relative group block mb-6 md:mb-0 w-full"
-          href="/portfolio/blogly-case-study"
+          href="/portfolio/bloggly-case-study"
         >
           <Image
             src="/images/blogglyPortfolioPage.png" // Replace with the actual path to your first image
